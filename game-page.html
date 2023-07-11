@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="game-information">
+      <div id="game-upper-section">
+          <div id="game-image-section">
+            <img id="game-image" src="../projeto_web/public/Red_Dead_Redemption_2.png" alt="Imagem do jogo">
+            <div id="game-summary" class="game-summary"></div>
+          </div>
+          <div id="game-details-section">
+              <h2 id="game-title"></h2>
+              <p id="game-release-date"></p>
+              <p id="game-developer"></p>
+              <p id="game-genre"></p>
+              <p id="game-platforms"></p>
+              <p id="game-summary"></p>
+          </div>
+      </div>
+      <div id="rating-form-section">
+        <div class="rating-form-container">
+            <div class="rating-form-block">
+                <h2>NOS CONTE SUA EXPERIÊNCIA COM O JOGO!</h2>
+                <form id="rating-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="score">Sua nota para o jogo:</label>
+                    <input type="number" id="score" name="score" min="1" max="10" required>
+                    <div id="stars-display"></div>
+                </form>
+            </div>
+            <div class="rating-form-block">
+                <h2 id="rating-desc">DESCRIÇÃO</h2>
+                <textarea id="review" name="review" rows="10" cols="50" required></textarea>
+                <button id="submit-review" class="submit-button">Avaliar</button>
+            </div>
+        </div>
+    </div>
+      <div id="game-reviews-section">
+        <h2>Avaliações de outros usuários</h2>
+        <div id="reviews"></div>
+        <nav>
+          <ul id="pagination">
+            <!-- paginação adicionada dinamicamente -->
+          </ul>
+        </nav>
+      </div>
+  </section>  
+  </main>
+
+  <footer>
+    <p>&copy; aVAlie seus jogos favoritos</p>
+    <p>&copy; ©2023 grupo 4 Ltda | unifei | itajubá-MG</p>
+  </footer>
+</body>
+</html>

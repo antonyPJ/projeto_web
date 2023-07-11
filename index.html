@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Pesquisar...">
+        <p id="search-description">DESCUBRA E AVALIE SEUS JOGOS FAVORITOS</p>
+        <ul id="search-suggestions"></ul>
+        <button id="search-button">Pesquisar</button>
+      </div>
+  </header>
+
+  <main>
+    <section id="featured-games" class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+              <li class="glide__slide" style="background-image: url('../projeto_web/public/csgo.png');">Slide 1</li>
+              <li class="glide__slide" style="background-image: url('../projeto_web/public/mkx.png');">Slide 2</li>
+              <li class="glide__slide" style="background-image: url('../projeto_web/public/godofwar.png');">Slide 3</li>
+              <!-- Adicione mais slides conforme necessário -->
+          </ul>
+        </div>
+    </section>
+    <h2 class="section-title">Principais Categorias</h2>
+    <section id="game-categories">
+      <div class="category" style="background-image: url('../projeto_web/public/csgo.png');">FPS</div>
+      <div class="category" style="background-image: url('../projeto_web/public/mkx.png');">LUTA</div>
+      <div class="category" style="background-image: url('../projeto_web/public/forza.png');">CORRIDA</div>
+      <div class="category" style="background-image: url('../projeto_web/public/nba2k23.png');">ESPORTES</div>
+      <div class="category" style="background-image: url('../projeto_web/public/hollow_knight.png');">INDIE</div>
+      <div class="category" style="background-image: url('../projeto_web/public/godofwar.png');">AVENTURA</div>
+      <div class="category" style="background-image: url('../projeto_web/public/outlast.png');">TERROR</div>
+      <div class="category" style="background-image: url('../projeto_web/public/suspense.png');">SUSPENSE</div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; aVAlie seus jogos favoritos</p>
+    <p>&copy; 2023 grupo 4 Ltda | unifei | itajubá-MG</p>
+  </footer>
+</body>
+</html>
